@@ -15,9 +15,6 @@ public class Book {
     String name;
 
     @ManyToOne
-    Library books;
-
-    @ManyToOne
     @JoinColumn(name = "library_id")
     private Library library;
 
